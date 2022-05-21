@@ -1,4 +1,4 @@
-********* geral *****
+/********* geral *****/
 * {
   margin: 0;
   padding: 0;
@@ -133,6 +133,24 @@ section .content p {
   gap: 3.2rem;
 }
 
+/****** CUSTOM COLORS ******/
+#services .card circle {
+  fill: var(--brand-light);
+}
+
+#navigation .logo path[fill*="#00856F"],
+#backToTopButton circle {
+  fill: var(--primary-color);
+}
+
+#contact li path{
+  stroke: var(--primary-color);
+}
+
+#navigation.scroll .logo path[fill*="#00856F"] {
+  fill: white;
+}
+
 /********  navigation   **********/
 nav{
   display: flex;
@@ -194,7 +212,7 @@ body.menu-expanded .close-menu {
 }
 
 .menu {
-  transform: translatey(100%);
+  transform: translateY(100%);
 }
 
 body.menu-expanded .menu {
